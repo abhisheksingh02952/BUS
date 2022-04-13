@@ -1,0 +1,62 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="admin_master.master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>i can infotech admin</title>
+	<!-- Start css3menu.com HEAD section -->
+	<link rel="stylesheet" href="../style.css" type="text/css" /><style type="text/css">._css3m{display:none}</style>
+	<!-- End css3menu.com HEAD section -->
+	
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+    .style1
+    {
+    	width:800px;
+    }
+    </style>
+       
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+    <div class="page">
+        <div class="header">
+        <div>
+            <asp:Image ID="Image1" runat="server" 
+                ImageUrl="~/images/i can infotech logo 2.jpg" Height="63px" Width="310px" />
+        </div>
+            <div class="title"  >
+                <h1>
+                    Inventory Management
+                </h1>
+            </div>
+            <div class="loginDisplay">
+            </div>
+            <div class="style1">
+     <ul id="css3menu1" class="topmenu">
+	<li class="topfirst"><a href="admin_home.aspx" style="height:15px;line-height:15px;">Home</a></li>
+	<li class="topmenu"><a href="reistration_approve.aspx" style="height:15px;line-height:15px;">Requset For New Retailer</a></li>
+	
+    <li class="topmenu"><a href="view_retailers.aspx" style="height:15px;line-height:15px;">View Retailer A/C</a></li>
+	<li class="topmenu"><a href="../cover/chome.aspx" style="height:15px;line-height:15px;">Logout</a></li>
+	
+    
+</ul><p class="_css3m"><a href="http://css3menu.com/">Horizontal Menu Bar In HTML  Css3Menu.com</a></p>
+<!-- End css3menu.com BODY section --></div>
+
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer">
+        
+    </div>
+    </form>
+</body>
+</html>
